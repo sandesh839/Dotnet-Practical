@@ -1,22 +1,26 @@
 using System;
 
-class VowelCounter
+public class VowelCounter
 {
-    static void Main()
+    public static void Main(string[] args)
     {
         Console.Write("Enter a string: ");
-        string input = Console.ReadLine().ToLower();  // Convert to lowercase
-
-        int count = 0;
-
+        string input = Console.ReadLine().ToLower();
+        
+        int vowelCount = 0;
+        
         foreach (char c in input)
         {
-            if ("aeiou".Contains(c))
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
             {
-                count++;
+                vowelCount++;
             }
         }
 
-        Console.WriteLine("Number of vowels: " + count);
+        // Use string interpolation
+        // Console.WriteLine($"The number of vowels in the string is: {vowelCount}");
+        
+        // OR use string concatenation
+        Console.WriteLine("The number of vowels in the string is: " + vowelCount);
     }
 }
