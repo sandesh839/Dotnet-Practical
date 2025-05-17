@@ -8,9 +8,9 @@ class DictionaryExample
         Dictionary<string, string> students = new Dictionary<string, string>();
 
         // Adding key-value pairs
-        students.Add("Aayush", "aayush@example.com");
-        students.Add("Sita", "sita@example.com");
-        students.Add("Ram", "ram@example.com");
+        students.Add("Sandesh", "sandesh@gmail.com");
+        students.Add("Amrit", "amrit@gmail.com");
+        students.Add("Shiva", "Shiva@gmail.com");
 
         Console.WriteLine("Student Names and Emails:");
         foreach (var pair in students)
